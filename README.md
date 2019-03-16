@@ -1,6 +1,6 @@
 # Hitman 2 Rpkg Patch Builder
 
-This tool allows the building of stand-alone patch archives for Hitman 2 (2018). Files found in patch archives shadow all files with the same runtimeID in archives lower in the hierarchy. As a consequence, the use of patch archives makes the modification of native game archives obsolete which in turn makes the process of modding Hitman 2 a lot easier and quicker. All file formats are supported.
+This tool allows the building of stand-alone patch archives for Hitman 2 (2018). Files found in patch archives shadow all files with the same runtimeID in archives lower in the hierarchy. As a consequence, the use of patch archives makes the modification of native game archives obsolete which in turn makes the process of modding Hitman 2 a lot easier and quicker. All dependency-free file formats are supported, this includes audio, texture and json-resources to name a few.
 
 The patch builder accepts an arbitrary number (within reason) of files and packs them into a single patch archive. The game also doesn't seem to impose any restrictions on the number of patch files you can use at the same time, which allows the creation of mods with a very modular structure. This is not only great for testing, but also allows for great compatibility between mods as longs as two patch archives don't modify the same files.
 
@@ -19,7 +19,7 @@ The patch builder accepts an arbitrary number (within reason) of files and packs
 Let me know if you come across any other issues.
 
 ### Important note about online play:
-Patches generated with this tool do not and are not intended to work during online play. For obvious reasons, I'll not provide any further info or help regarding this issue.
+Some important files are fetched from IOIs server while playing online, those files have priority over any files located in the local archives. Consequently, patches that modify those files do not and are not intended to work during online play. For obvious reasons, I'll not provide any further info or help regarding this issue.
 
 ### License
 MIT Licence
